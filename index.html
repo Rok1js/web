@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>WHO | WHAT | WHERE</title>
+  <title>DIV | SPAN | A | CSS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
@@ -18,56 +18,69 @@
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Me</a>
+
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#div-tag">&ltdiv&gt tags</a></li>
+        <li><a href="#span-tag">&ltspan&gt tags</a></li>
+        <li><a href="#a-tag">&lta&gt tags</a></li>
+        <li><a href="#css">css</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+<div id="div-tag" class="container-fluid bg-1 text-center">
+  <h2 class="margin">&ltdiv&gt tags</h2>
+  <p class="paragraph">&ltdiv&gt tags tiek izmantots gandrīz ikvienā weblapā, ar to atdala weblapas apgabalus, parasti dažādu informāciju. Šim tagam nav effektu uz lapas saturu, ja vien to stilizē ar css stilu , mainot tā izmēru, fona krāsu, u.c.  &ltdiv&gt tags ir izmantotākais tags no visiem html tagiem.
+  </p>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+<div id="span-tag" class="container-fluid bg-2 text-center">
+  <h2 class="margin">&ltspan&gt tags</h2>
+  <p class="paragraph">&ltspan&gt tagu izmanto lai grupētu elementus, piemēram, tekstu , stila vajadzībām , vai stilizētu atsevišķas teksta daļas, mainot tā krāsu vai fonta lielumu, tomēr pats &ltspan&gt tags nemaina teksta izskatu, to stilizē ar css stila elementiem.
+  </p>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">
-  <h3 class="margin">Where To Find Me?</h3><br>
+<div id="a-tag" class="container-fluid bg-3 text-center">
+  <h2 class="margin">&lta&gt tags</h2>
+  <p class="paragraph">&lta&gt tagu izmanto lai veidotu hipersaites uz citām weblapām, failiem, e-pasta adresēm vai sadaļām tās pašas lapas ietvaros , a tagu bieži izmanto ar atrubūtiem, kuros parasti definē saites uz kurām novirzīt lietotāju.
+  </p>
+</div>
+<div id="css" class="container-fluid bg-4 text-center">
+  <h2 class="margin">CSS stila knifi</h2>
   <div class="row">
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h4>Pārklājuma efekti</h4>
+      <p>Pārklājuma efekti jeb "Hover". Ar pāklājuma efektiem var mainīt, piemēram, pogas krāsu vai pogas teksta fonu, brīdī, kad lietotājs ar peles kursoru uziet uz šī teksta</p>
     </div>
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h4>Animācijas efekti</h4>
+      <p>Animācijas efekti jeb "Animations". Ar css palīdzību ir iespējams animēt, neizmantojot JavaScript programmēšanas valodu, animācija sastāv no divām daļām, no animācijas veida un atslēgkadriem, jeb laika,  mainot fona krāsu vai veidojot tekstu kas "slīd" pa ekrānu. </p>
     </div>
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h4>Pārejas efekti</h4>
+      <p>Pārejas effekti jeb "Transitions" ir effekti ar kuru palīdzību tiek animētas pārejas starp stila elementiem, kā piemērs, iepriekš minētais hover, ja hover darbojās momentāli līdz ko lietotājs ir uzgājis uz lapas ar kursoru , tad pārejas effekti šo stila maiņu var padarīt "skaistāku", ar lēnāku pāreju, kuru css stilā var piešķirt ar ilgumu, cik ilgi notiek pāreja.</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/call-to-action-button-mouse-hover_76c44561-d228-4e4e-9e73-3443372ff376.gif?v=1505241549f" class="img-responsive margin" style="width:100%; height: 400px; object-fit: cover;" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <img src="https://freefrontend.com/assets/img/css-animation-examples/CSS-Animation-Time-of-Day.gif" class="img-responsive margin" style="width:100%; height: 400px; object-fit: cover;" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <img src="https://s3.amazonaws.com/revue/items/images/003/227/007/original/gradient-fill-underline-hover-effect-on-multiple-lines.gif?1531886629" class="img-responsive margin" style="width:100%; height: 400px; object-fit: cover;" alt="Image">
     </div>
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Website made by Reinis Barzdins</a></p>
+<footer class="container-fluid bg-5 text-center">
+  <p>Reinis Barzdins</a></p>
 </footer>
 
 </body>
