@@ -8,6 +8,7 @@ p {font-size: 16px;}
 .bg-1 {
   background-color: #e9897e;
   color: #ffffff;
+  padding-top: 150px !important;
 }
 .bg-2 {
   background-color: #2c362b;
@@ -41,6 +42,19 @@ p {font-size: 16px;}
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 5px;
+  width: 100%;
+  position: fixed !important;
+
+  z-index: 11;
+}
+.nav-nothing{
+  transition: ease-in-out .5s;
+  background: white !important;
+}
+.navbar-scroll{
+transition: ease-in-out .5s;
+  background: #b3f542 !important;
+  top: 0%;
 }
 .navbar-nav{
   text-transform: uppercase;
