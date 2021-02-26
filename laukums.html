@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>DIV | SPAN | A | CSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="laukums.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/main.js" type="text/javascript">
+
+  </script>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default nav-nothing">
+  <div class="container">
+    <div class="navbar-header">
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#div-tag">&ltdiv&gt tags</a></li>
+        <li><a href="index.html#span-tag">&ltspan&gt tags</a></li>
+        <li><a href="index.html#a-tag">&lta&gt tags</a></li>
+        <li><a href="index.html#css">css</a></li>
+        <li><a href="laukums.html">laukums</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="opcijas container-fluid ">
+  <input type="text" id="x" name="x" value="0">
+  <input type="text" id="y" name="y" value="0">
+ <button onclick="genere()" type="button" name="button">Ģenerēt</button>
+</div>
+
+<div class="container laukums1" id="laukums">
+
+</div>
+<script type="text/javascript">
+  function genere(){
+    let x = parseInt(document.getElementById("x").value); // rindas
+    let y = parseInt(document.getElementById("y").value); // kolonnas
+
+
+    var laukums = document.getElementById("laukums");
+    var row = document.createElement("DIV");
+    row.setAttribute("class","row");
+
+    laukums.appendChild(row);
+
+    var col = [];
+
+    for (var i = 0; i < x*y; i++) {
+      col[i] = document.createElement("DIV");
+      col[i].setAttribute("class","col-sm-4");
+    }
+    for (var i = 0; i < x*y; i++) {
+      row.appendChild(col[i]);
+    }
+
+
+  }
+
+
+
+</script>
+<div class="container laukums1" id="laukumstest">
+  <div class="row">
+    <div class="col-sm-4">
+      1
+    </div>
+    <div class="col-sm-4">
+      2
+    </div>
+    <div class="col-sm-4">
+      3
+    </div>
+    <div class="col-sm-4">
+      4
+    </div>
+    <div class="col-sm-4">
+      5
+    </div>
+    <div class="col-sm-4">
+      6
+    </div>
+    <div class="col-sm-4">
+      7
+    </div>
+    <div class="col-sm-4">
+      8
+    </div>
+    <div class="col-sm-4">
+      9
+    </div>
+  </div>
+</div>
+  </body>
+</html>
