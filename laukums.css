@@ -70,13 +70,24 @@ transition: ease-in-out .5s;
 .opcijas{
   padding-top: 100px;
 }
-.laukums1{
-  margin: 0;
-  width: 160px !important;
+#poga{
+  cursor: pointer;
+  color: white;
+  background: black;
+  
 }
-.col-sm-4{
+#laukums1{
+  margin: 0 auto;
+  padding: 0 !important;
+  width: 200px;
+  font-size: 0;
+}
+.square{
+  font-size: 16px;
   border: 1px solid black;
   height: 50px;
+  width: 50px;
+  display: inline-block;
 }
 
 footer{
