@@ -16,6 +16,7 @@ var problemListShuffe = [];
 function checkmyinput () {
     // Get inputfield
     var inputfield = document.getElementById("x");
+    
 
     // Get value from inputfield
     var inputval = inputfield.value;
