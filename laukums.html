@@ -34,9 +34,33 @@
     </div>
   </div>
 </nav>
-<div class="opcijas container-fluid">
-  <input type="text" id="x" name="x" onkeyup="checkmyinput()" value="2">
- <button type="button" name="button" id="poga">Ģenerēt</button>
+<div class="container text-center bg-1">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Atmiņas spēle</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center opcijas">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="teksts">Spied spēlēt , lai ģenerētu laukumu.</p>
+      <input class="area" type="text" id="x" name="x" onkeyup="checkmyinput()" value="2">
+     <button class="generet" type="button" name="button" id="poga">Spēlēt</button>
+    </div>
+  </div>
+</div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1 class="uzvara">Tu esi uzvarējis !</h1>
+    <h3 id="laiks"></h3>
+    <h3 id="meginajumi"></h3>
+  </div>
+
 </div>
 
 <div class="container laukums1" id="laukums">
