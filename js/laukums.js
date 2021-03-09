@@ -208,8 +208,10 @@ if (klikski < 2) {
       klikski = 0;
       pari++;
       if (pari == ((x*x)/2)) {
-        modal.style.display = "block";
         clearInterval(sekunde);
+        setTimeout(function(){
+          modal.style.display = "block";
+        }, 500);
         document.getElementById("laiks").innerHTML = `Tev tas prasīja: ${laiks} sekundes un ${meginajumi} mēģinājumus`
         console.log("Kopējais laiks: "+ laiks+ " sekundes");
       }

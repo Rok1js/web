@@ -115,7 +115,7 @@ background: #363945;
   display: inline-block;
   line-height: 60px;
   text-align: center;
-
+  transition: ease-in-out .5s;
 }
 .modal {
   display: none; /* Hidden by default */
@@ -129,6 +129,7 @@ background: #363945;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  transition: ease-in-out .5s;
 }
 
 /* Modal Content */
