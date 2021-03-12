@@ -10,6 +10,24 @@ var problemListShuffe = [];
 var meginajumi = 0;
 
 
+function checkmyinput () {
+    // Get inputfield
+    var inputfield = document.getElementById("x");
+
+
+    // Get value from inputfield
+    var inputval = inputfield.value;
+
+    // Remove non numeric input
+    var numeric = inputval.replace(/[^0-9]+/,"");
+
+    // Check if input is numeric and even, if not empty field
+    if (numeric.length != inputval.length || numeric%2 != 0 || numeric == 0) {
+        inputfield.value = '';
+    }
+}
+
+
 function generateProblem() {
   // creates a random number from 1-100
   var randNum1 = Math.floor(Math.random() * 30) + 1;
