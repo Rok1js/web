@@ -90,9 +90,9 @@ for (var i = 0; i < problemList.length+problemListAnswers.length; i++) { // even
     }
 }
 
-console.log(problemListShuffe);
 shuffle(problemListShuffe);
-console.log(vertibas);
+console.log(problemList);
+console.log(problemListAnswers);
 
 
   laukums = document.getElementById("laukums");
@@ -176,7 +176,6 @@ var sekunde;
 
 function myTimer() {
   laiks++;
-  console.log("sekunde");
 }
 
 function flip(divs) {
@@ -191,7 +190,6 @@ if (klikski < 2) {
   irVien = false;
   irDivi = false;
   if (klikski == 2 && vienadi(pag)) {
-    console.log("vienadi");
     vienadi(pag);
     irDivi = true;
     laukums.style.pointerEvents = "none";
@@ -207,6 +205,16 @@ if (klikski < 2) {
       irDivi = false;
       klikski = 0;
       pari++;
+      if (problemListAnswers.indexOf(pag[0].textContent) == problemList.indexOf(pag[1].textContent)) {
+        problemList.splice(problemList.indexOf(pag[1].textContent), 1);
+        problemListAnswers.splice(problemListAnswers.indexOf(pag[0].textContent), 1);
+        console.log(problemList);
+        console.log(problemListAnswers);
+        console.log("pirmais");
+      } else if (problemListAnswers.indexOf(pag[1].textContent) == problemList.indexOf(pag[0].textContent)) {
+        console.log("otrais");
+      }
+
       if (pari == ((x*x)/2)) {
         clearInterval(sekunde);
         setTimeout(function(){
@@ -228,7 +236,6 @@ if (klikski < 2) {
       pag[1].style.background="#0072B5";
       pag[1].style.color= "white";
       laukums.style.pointerEvents = "none";
-      console.log("heiheijio");
       setTimeout(function(){
         klikski = 0;
         pag[0].style.background="#D2386C";
