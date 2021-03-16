@@ -74,7 +74,6 @@ while (problemList.length < ((x*x)/2)) {
   "*":  function (x, y) { return x * y },
 };
     var pagaidu = generateProblem();
-    console.log(pagaidu);
     problemList.push(`${pagaidu[Object.keys(pagaidu)[0]]}${pagaidu[Object.keys(pagaidu)[1]]}${pagaidu[Object.keys(pagaidu)[2]]}`);
     problemListAnswers.push(`${math_it_up[pagaidu[Object.keys(pagaidu)[1]]](pagaidu[Object.keys(pagaidu)[0]], pagaidu[Object.keys(pagaidu)[2]])}`);
 
@@ -91,8 +90,7 @@ for (var i = 0; i < problemList.length+problemListAnswers.length; i++) { // even
 }
 
 shuffle(problemListShuffe);
-console.log(problemList);
-console.log(problemListAnswers);
+
 
 
   laukums = document.getElementById("laukums");
@@ -208,11 +206,8 @@ if (klikski < 2) {
       if (problemListAnswers.indexOf(pag[0].textContent) == problemList.indexOf(pag[1].textContent)) {
         problemList.splice(problemList.indexOf(pag[1].textContent), 1);
         problemListAnswers.splice(problemListAnswers.indexOf(pag[0].textContent), 1);
-        console.log(problemList);
-        console.log(problemListAnswers);
-        console.log("pirmais");
       } else if (problemListAnswers.indexOf(pag[1].textContent) == problemList.indexOf(pag[0].textContent)) {
-        console.log("otrais");
+
       }
 
       if (pari == ((x*x)/2)) {
@@ -249,11 +244,6 @@ if (klikski < 2) {
     }
   }
 
-
-     //else if(!irDivi) {
-    //  divs.style.background="#ffffff";
-    //  divs.style.pointerEvents = "auto";
-    //  console.log("heya");
 }
 
 }
