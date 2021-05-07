@@ -10,8 +10,14 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="js/main.js" type="text/javascript">
-
+  <script src="js/main.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    function fetchJokes(){
+      fetch('https://api.chucknorris.io/jokes/random', {
+        method: 'GET'})
+        .then(res=> res.json())
+        .then(data => document.getElementById("top").innerHTML = data.value)
+      }
   </script>
 
 </head>
@@ -34,6 +40,15 @@
     </div>
   </div>
 </nav>
+<div class="container text-center bg-0">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Joke of the day: </h2><i><h2 id="top"></h2></i>
+      <button class="generet" type="button" name="button" id="joke" onclick="fetchJokes()" >Chuck norris joke</button>
+    </div>
+  </div>
+</div>
+
 <div class="container text-center bg-1">
   <div class="row">
     <div class="col-md-12">

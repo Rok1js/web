@@ -7,8 +7,11 @@ body {
 }
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
-.bg-1 {
+.bg-0 {
   padding-top: 120px !important;
+}
+.bg-1 {
+
 }
 .bg-2 {
   background-color: #2c362b;
@@ -87,6 +90,17 @@ background: #363945;
  text-transform: uppercase;
 }
 #poga{
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  background: #363945;
+  border: none;
+  border-radius: 10px;
+  color: white !important;
+  border: 2px solid white;
+  transition: ease-in-out .5s;
+}
+#joke{
   cursor: pointer;
   font-size: 20px;
   text-align: center;
